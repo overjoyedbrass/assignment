@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class DocumentCount {
     
     public static ArrayList<Document> getAll(int limit) throws SQLException{
-        //vybere iba documenty, ktoré boli navstivene
+        //vybere iba dokumenty, ktoré boli navstivene
         //String sqlOptimal = "SELECT doc, d.name, count(doc) as clicks FROM clicks as c JOIN documents as d ON d.uuid = c.doc WHERE date >= DATE(NOW() - INTERVAL '7 days') GROUP BY doc, d.name ORDER BY clicks DESC";
         String sql = "SELECT "
                 + "uuid, "
